@@ -1,0 +1,6 @@
+google-generativeai
+pystray
+pynput
+pyperclip
+plyer
+Pillow

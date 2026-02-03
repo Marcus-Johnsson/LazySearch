@@ -1,0 +1,7 @@
+{
+  "api_key": "AIzaSyDUViHofXRky9XTmi9KuifAGOZVWHr5Y9A",
+  "hotkey1": "alt+b",
+  "hotkey2": "alt+g",
+  "prompt_template1": "Explain briefly in 1-2 sentences:",
+  "prompt_template2": "Explain this svelte5/typescript code:"
+}
