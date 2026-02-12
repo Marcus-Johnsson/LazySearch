@@ -1,0 +1,7 @@
+{
+  "api_key": "AIzaSyARh7Pn5lGY63bYOd0-vqXhE637p9dAPzo",
+  "hotkey1": "alt+b",
+  "hotkey2": "alt+g",
+  "prompt_template1": "Explain briefly in 1-2 sentences:",
+  "prompt_template2": "Explain this c# code:"
+}

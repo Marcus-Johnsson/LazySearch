@@ -4,3 +4,14 @@ pynput
 pyperclip
 plyer
 Pillow
+
+# Linux additional system dependencies (install via package manager):
+# - xclip or xsel (for pyperclip clipboard access)
+# - libgirepository1.0-dev, gir1.2-appindicator3-0.1 (for pystray tray icon)
+# - python3-tk (for settings dialog)
+#
+# Ubuntu/Debian:
+#   sudo apt install xclip python3-tk libgirepository1.0-dev gir1.2-appindicator3-0.1
+#
+# Fedora:
+#   sudo dnf install xclip python3-tkinter libappindicator-gtk3

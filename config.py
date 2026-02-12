@@ -1,7 +1,22 @@
 import json
 import os
+import sys
 
-CONFIG_FILE = os.path.join(os.path.dirname(__file__), 'config.json')
+
+def get_config_dir():
+    """Get platform-appropriate config directory."""
+    if sys.platform == 'win32':
+        # Windows: use app directory
+        return os.path.dirname(__file__)
+    else:
+        # Linux/macOS: use XDG config directory
+        xdg_config = os.environ.get('XDG_CONFIG_HOME', os.path.expanduser('~/.config'))
+        config_dir = os.path.join(xdg_config, 'lazysearch')
+        os.makedirs(config_dir, exist_ok=True)
+        return config_dir
+
+
+CONFIG_FILE = os.path.join(get_config_dir(), 'config.json')
 
 DEFAULT_CONFIG = {
     "api_key": "",
